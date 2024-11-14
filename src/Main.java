@@ -23,7 +23,5 @@ public class Main {
         else{
             System.out.println("welcome to user page");
         }
-
-
         }
     }
