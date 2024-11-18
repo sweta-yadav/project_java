@@ -3,32 +3,39 @@ package com.admin.product;
 public class Product {
     private int productID;
     private String productName;
-    private String productDescription;
-    private int  productprice;
+    private double productprice;
     private int productQuantity;
     private String productCategory;
+    private String BrandName;
+    private String ShippingInformation;
+    private String StockStatus;
 
-    public Product() {
+    public Product() { }
 
+    public Product(int productID, String productName, double productprice, int productQuantity, String productCategory, String brandName, String shippingInformation, String stockStatus) {
+        this.productID = productID;
+        this.productName = productName;
+        this.productprice = productprice;
+        this.productQuantity = productQuantity;
+        this.productCategory = productCategory;
+        BrandName = brandName;
+        ShippingInformation = shippingInformation;
+        StockStatus = stockStatus;
     }
-    public Product(int productID, String productName,String productDescription,int productprice,int productQuantity,String productCategory){
-        this.productID=productID;
-        this.productName=productName;
-        this.productDescription=productDescription;
-        this.productprice=productprice;
-        this.productQuantity=productQuantity;
-        this.productCategory=productCategory;
 
-    }
     @Override
     public String toString() {
         return "Product{" +
-                "productId{" + productID+
-                ", productName='" + productName+ '\''+
-                ", productDescription='" + productDescription+ '\''+
-                ", productPrice=" + productprice+
-                ", productQuantity=" + productQuantity+
-                ", productCategory='" + productCategory+ '\''+
-                "}";
+                "productID=" + productID +
+                ", productName='" + productName + '\'' +
+                ", productprice=" + productprice +
+                ", productQuantity=" + productQuantity +
+                ", productCategory='" + productCategory + '\'' +
+                ", BrandName='" + BrandName + '\'' +
+                ", ShippingInformation='" + ShippingInformation + '\'' +
+                ", StockStatus='" + StockStatus + '\'' +
+                '}';
     }
 }
+
+

@@ -1,6 +1,6 @@
  class login {
-    private final String ID="admin123";
-    private final String Password="mart9876@1234";
+    private final String ID="admin";
+    private final String Password="123";
 
     public boolean aunthenticate(String id,String password){
         return id.equals(ID)&& password.equals(Password);
