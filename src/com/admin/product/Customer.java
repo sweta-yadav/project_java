@@ -1,11 +1,11 @@
 package com.admin.product;
-public class Costumer {
+public class Customer {
     private int id;
     private String name;
     private String email;
-    private String phone;
+    private long phone;
     //constructor
-    public Costumer(int id,String name,String email,String phone){
+    public Customer(int id,String name,String email,long phone){
         this.id=id;
         this.name=name;
         this.email=email;
@@ -20,7 +20,7 @@ public class Costumer {
     public String getEmail(){
         return email;
     }
-    public String getPhone(){
+    public long getPhone(){
         return phone;
     }
     public void setName(String name){
@@ -29,7 +29,7 @@ public class Costumer {
     public void setEmail(String email){
         this.email=email;
     }
-    public void setphone(String phone){
+    public void setPhone(long phone){
         this.phone=phone;
     }
 
@@ -41,7 +41,7 @@ public class Costumer {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", phonenumber=" + phone +
+                ", phone=" + phone +
                 '}';
     }
 }

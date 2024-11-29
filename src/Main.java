@@ -1,6 +1,6 @@
 import com.admin.product.Customer;
 import com.admin.product.Product;
-import com.admin.auth.Login;
+import com.admin.product.Login;
 import java .util.*;
 import java.util.ArrayList;
 public class Main {
@@ -64,11 +64,11 @@ public class Main {
                     case 5: 
                         //add and view all the customer
                         System.out.println("customer List:");
-                        Customer customer1=new Customer(1,"Trisha","trisharoy2060@gmail.com",98000000);
+                        Customer customer1=new Customer(1,"Trisha","trisharoy2060@gmail.com",98000000L);
                         System.out.println(customer1);
-                        Customer customer2=new Customer(2,"sandhya","sondhee@gmail.com",98000000);
+                        Customer customer2=new Customer(2,"sandhya","sondhee@gmail.com",98000000L);
                         System.out.println(customer2);
-                        Customer customer3=new Customer(3,"abc","abc@gmail.com",980000);
+                        Customer customer3=new Customer(3,"abc","abc@gmail.com",980000L);
                         break;
                     
                     case 6: 
